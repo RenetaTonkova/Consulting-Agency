@@ -1,13 +1,50 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    word-wrap: break-word;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-}
-
-.site-header, .site-footer, main section {
-    border: 1px solid blue;
-    margin: 10px;
 }
 
 .site-header {
@@ -17,12 +54,13 @@ body {
 }
 
 nav.top-navigation {
-    background: rgba(190, 150, 95, 0.9);
     width: 60%;
     margin: 0 auto;
+    padding-top: 25px;
 }
 
 nav.top-navigation ul {
+    background: rgba(190, 150, 95, 0.9);
     padding: 0;
     text-align: center;
 }
@@ -62,12 +100,10 @@ section.slider p {
     text-shadow: 0px 0px 4px black;
     font-size: 1.2em;
     margin: 0 auto;
-    /*background: rgba(150, 150, 150, 0.4);
-   /* box-shadow: 0px 0px 15px 15px rgba(150, 150, 150, 0.4);*/
 }
 
 section.slider button {
-    margin-top: 30px;
+    margin-top: 50px;
     color: white;
     font-weight: bold;
     background-color: #080820;
@@ -75,23 +111,19 @@ section.slider button {
     border-radius: 5px;
     padding: 10px 15px;
     box-shadow: 0px 0px 1px white;
-    position: relative;
     text-transform: uppercase;
 }
 
 section.slider i {
     color: #C79D63;
-    position: absolute;
-    right: 0px;
-    top: 11px;
-    padding: 0px 2px;
 }
 
 section.slider button:hover, section.slider button:hover i {
     background-color: #C79D63;
     color: #110907;
 }
-section.industries{
+
+section.industries {
     text-align: center;
 }
 
@@ -99,45 +131,230 @@ section.industries{
     width: 400px;
     display: inline-block;
     margin: 10px;
+    vertical-align: top;
 }
+
 .industries h1 {
     font-weight: bold;
     font-size: 3em;
+    margin: 30px 0;
 }
-.industries .icon{
+
+.industries .icon {
     width: 35px;
     height: 35px;
     border-radius: 50%;
     background-color: #080820;
     color: white;
     line-height: 35px;
-    margin: 10px 5px;
     font-size: 1.5em;
     float: left;
 }
-.industries article h2{
+
+.industries article h2 {
     text-align: left;
     margin-left: 60px;
     font-size: 1.2em;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: bold;
 }
-.industries article p{
+
+.industries article p {
     text-align: left;
     margin-left: 60px;
 }
+
+section.mission {
+    text-align: center;
+    height: 80px;
+    background-size: cover;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('images/steel-bg.jpg');
+}
+
+.mission h1.accent-brown {
+    color: #BB9F7A;
+    padding: 20px 8px 8px 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.mission h1.accent-black {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.benefits {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/background-choose-us.jpg');
+    background-size: cover;
+    text-align: center;
+}
+
 .benefits article {
     width: 300px;
-    border: 1px solid green;
+    border: 2px solid #B39F87;
     display: inline-block;
-    margin: 10px;
+    margin: 10px 10px 25px 10px;
+}
+
+.benefits h1 {
+    color: wheat;
+    font-size: 2em;
+    padding: 50px 20px 20px 20px;
+}
+
+.benefits h2 {
+    font-weight: bold;
+    margin: 30px 15px 15px 15px;
+}
+
+.benefits p {
+    margin: 15px 15px 30px 15px;
+    text-align: left;
+}
+
+.benefits a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.benefits article:hover {
+    background: white;
+    color: black;
+}
+
+.benefits article:hover a {
+    color: black;
+}
+
+section.testimonials {
+    background: url('images/consulting-woman.jpg');
+    background-size: cover;
+    text-align: right;
+}
+
+article.testimonial {
+    background: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    width: 450px;
+    margin: 40px 20px 0 20px;
+}
+
+article.testimonial p.text {
+    text-align: left;
+    margin: 50px 25px 10px 25px;
+}
+
+article.testimonial p span {
+    color: #C5AB94;
+    font-size: 2em;
+}
+
+article.testimonial .autor {
+    background: #080820;
+    color: white;
+    min-height: 200px;
+    margin: 10px 25px 40px 25px;
+}
+
+article.testimonial .position {
+    padding: 10px 10px 5px 10px;
+    color: #4C4B5D;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+article.testimonial .name {
+    padding: 5px 10px 10px 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-footer {
+    background: #080820;
+    color: white;
+    text-align: center;
 }
 
 .site-footer section {
-    width: 300px;
-    border: 1px solid green;
+    width: 240px;
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.site-footer .consulting p {
+    margin: 10px 10px 10px 40px;
+    text-align: left;
+}
+
+.site-footer .consulting p.icons {
+    margin-right: 0px;
+    text-align: right;
+}
+
+.site-footer h2 {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 5px;
+}
+
+.site-footer .consulting a {
+    display: inline-block;
+    border-radius: 50%;
+    background: #83838F;
+    font-size: 1.5em;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    color: #080820;
+    margin: 5px;
+}
+
+.site-footer .extra-links {
+    text-align: left;
+    margin: 20px;
+}
+
+.site-footer .extra-links .first-column, .site-footer .extra-links .second-column {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 0 10px 10px;
+    width: 40%;
+}
+
+.site-footer .extra-links a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 0 0 0 10px
+}
+
+.instagram-widget ul {
+    padding: 10px;
 }
 
 .instagram-widget li {
     display: inline-block;
+}
+
+.instagram-widget li img {
+    width: 60px;
+    height: 60px;
+}
+
+.site-footer .extra-links a:hover {
+    color: #FFC584;
 }
